@@ -11,12 +11,12 @@ Given ('I visit Facebook', async function() {
 
 When ('I see log in form', async function(){
     const condition = until.elementLocated(By.name('username'));
-    await driver.wait(condition,7000);
+    //await driver.wait(condition,5000);
 });
 
 Then ('I log in with {string} username and {string} password', async function(user, pass){
     const username = await driver.findElement(By.xpath("//input[@name='email']"));
     username.sendKeys(user);
-    const password = await driver.findElement(By.xpath)("//input[@name='pass']");
+    const password = await driver.findElement(By.xpath("//input[@name='pass']"));
     password.sendKeys(pass, Key.ENTER);
 });

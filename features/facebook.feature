@@ -1,4 +1,4 @@
-Feature: instagram
+Feature: Facebook
 
     Scenario: Login to Facebook
         Given I visit Facebook
